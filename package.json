@@ -11,7 +11,7 @@
     "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
     "gulp-clean-css": "^4.0.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^6.0.1",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.1",
@@ -20,6 +20,8 @@
     "gulp-uglify": "^3.0.2",
     "imagemin-jpeg-recompress": "^6.0.0",
     "imagemin-pngquant": "^7.0.0"
+    "sass": "^1.45.1",
+    "sass-embedded": "^1.49.9",
   },
   "browserslist": [
     "> 1%",
