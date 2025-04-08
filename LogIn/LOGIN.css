@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Lilita+One&display=swap');
+
+h1 {
+  font-family: 'Lilita One', sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #e91b1b;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.email {
+  margin: 10px;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgb(106, 106, 242);
+}
+
+#email,
+#password {
+  font-family: 'Jua', sans-serif;
+  width: 240px;
+  height: 30px;
+  border-radius: 11px;
+  border: 2px solid rgb(106, 106, 242);
+  padding: 6px 20px 4px 10px;
+  margin: 3px 2px;
+}
+
+input::placeholder {
+  color: gray;
+  padding-left: 10px;
+}
+
+.filedset {
+  display: flex;
+  margin: 60px auto;
+  width: 300px;
+  border: 2px solid #f06161;
+  border-radius: 10px;
+}
+
+.name {
+  margin-left: 10px;
+  padding: 4px 20px 6px 20px;
+  border: 2px solid #f06161;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 100;
+  color: #eb4545;
+  font-family: 'Lilita One', sans-serif;
+}
+
+fieldset:hover {
+  background-color: rgba(240, 97, 97, 6%);
+  .name {
+    background-color: white;
+  }
+}
+
+#btn {
+  font-family: 'Jua', sans-serif;
+  width: 270px;
+  height: 40px;
+  margin: 10px;
+  border: 2px solid gray;
+  background-color: lightgray;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+#btn:active {
+  box-shadow: 0 0 10px gray;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.warning {
+  font-family: 'Jua', sans-serif;
+  align-self: center;
+  color: red;
+  font-size: 16px;
+  margin: 10px auto;
+}
+
+.pw {
+  margin: 10px;
+  position: relative;
+}
+
+#pwshow {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 13px;
+  right: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  border: none;
+  background-color: transparent;
+}
+
+#pwshow:hover {
+  cursor: pointer;
+}

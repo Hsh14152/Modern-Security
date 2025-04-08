@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/LogIn/LOGIN.js" defer></script>
+    <link rel="stylesheet" href="/LogIn/LOGIN.css" />
+    <link rel="shortcut icon" href="/assets/imgs/brand.svg" />
+    <title>LogIn</title>
+  </head>
+  <body>
+    <h1>Modern Security</h1>
+    <fieldset class="filedset">
+      <legend class="name">LogIn</legend>
+      <form>
+        <div class="inputbox">
+          <div class="email">
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="이메일"
+              onkeyup="validcheck()"
+            />
+          </div>
+          <div class="pw">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="비밀번호"
+              onkeyup="validcheck()"
+            />
+            <button
+              type="button"
+              id="pwshow"
+              style="background-image: url(/LogIn/img/hidden.png)"
+            ></button>
+          </div>
+        </div>
+        <button type="button" id="btn">로그인</button>
+      </form>
+    </fieldset>
+  </body>
+</html>
