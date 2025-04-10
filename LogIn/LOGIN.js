@@ -6,7 +6,9 @@ let passwordEl = document.getElementById('password');
 let password = document.querySelector('.inputbox');
 let pwshowbtn = document.getElementById('pwshow');
 
+let link = ['', '/LogIn/SGH/SGH.html', '/LogIn/HSH/HSH.html', ''];
 let a = 0;
+let z = 0;
 
 let originEmail = [
   'gks@naver.com',
@@ -74,14 +76,8 @@ function check() {
     if (email == originEmail[i]) {
       if (password == originPW[i]) {
         alert('로그인 성공!');
-        emailEl.value = null;
-        passwordEl.value = null;
-        validcheck();
-        eyeimg();
-        let div = document.querySelector('.warning');
-        if (div !== null) {
-          div.remove();
-        }
+        z = i;
+        replaceLink();
         break;
       } else if (!password) {
         validcheck();
@@ -146,4 +142,8 @@ function eyeimg() {
     typepassword();
     a += 1;
   }
+}
+
+function replaceLink() {
+  location.replace(link[z]); // replace는 이전 페이지로 돌아가기 불가능
 }

@@ -12,25 +12,25 @@
     <meta property="og:image" content="https://i.imgur.com/0Fyo1cI.jpeg" />
     <meta property="og:title" content="Modern Security" /> 
     <meta property="og:description" content="보안을 설명하는 웹페이지" />
-    <link rel="shortcut icon" href="/imgs/brand.svg" />
+    <link rel="shortcut icon" href="/assets/imgs/brand.svg" />
     <title>Modern Security</title>
 
     <!-- font icons -->
-    <link rel="stylesheet" href="/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     
     <!-- owl carousel -->
-    <link rel="stylesheet" href="/owl-carousel/css/owl.carousel.css">
-    <link rel="stylesheet" href="/owl-carousel/css/owl.theme.default.css">
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.theme.default.css">
 
     <!-- Bootstrap + Ollie main styles -->
-	<link rel="stylesheet" href="/css/ollie.css">
+	<link rel="stylesheet" href="assets/css/ollie.css">
 
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
     <nav id="scrollspy" class="navbar navbar-light bg-light navbar-expand-lg fixed-top" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src=/imgs/brand.svg" alt="" class="brand-img"></a>
+            <a class="navbar-brand" href="#"><img src="assets/imgs/brand.svg" alt="" class="brand-img"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -310,11 +310,10 @@
     <section class="section" id="testmonial">
         <div class="container">
             <h3 class="section-title"><br>개인적 차원의 노력</h3>
-
             <div id="owl-testmonial" class="owl-carousel owl-theme mt-4">
                 <div class="item">
                     <div class="textmonial-item">
-                        <img src="data:image/png;base64,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" class="avatar" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, ollie Landing page">
+                        <img src="./assets/imgs/bone.png" class="avatar" alt="악성 앱 주의">
                         <div class="des">
                             <h5 class="section-title">악성 앱 주의</h5>
                             <div class="line"></div>
@@ -324,7 +323,7 @@
                 </div>
                 <div class="item">
                     <div class="textmonial-item">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi3rHT7F7DTUcZ-14jYWi-Jx5kiR6KxWRv5A&usqp=CAU" class="avatar" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, ollie Landing page">
+                        <img src="./assets/imgs/wifi.png" class="avatar" alt="공공 Wifi">
                         <div class="des">
                             <h5 class="section-title">공공 wifi사용 자제</h5>
                             <div class="line2"></div>
@@ -334,7 +333,7 @@
                 </div>
                 <div class="item">
                     <div class="textmonial-item">
-                        <img src="data:image/png;base64,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" class="avatar" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, ollie Landing page">
+                        <img src="./assets/imgs/update.png" class="avatar" alt="Update">
                         <div class="des">
                             <h5 class="section-title">주요 소프트웨어의 주기적인 업데이트</h5>
                             <div class="line3"></div>
@@ -377,18 +376,18 @@
     </section>
 	
 	<!-- core  -->
-    <script src="/jquery/jquery-3.4.1.js"></script>
-    <script src="/bootstrap/bootstrap.bundle.js"></script>
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
     <!-- bootstrap 3 affix -->
-	<script src="/bootstrap/bootstrap.affix.js"></script>
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
     
     <!-- Owl carousel  -->
-    <script src="/owl-carousel/js/owl.carousel.js"></script>
+    <script src="assets/vendors/owl-carousel/js/owl.carousel.js"></script>
 
 
     <!-- Ollie js -->
-    <script src="/js/Ollie.js"></script>
+    <script src="assets/js/Ollie.js"></script>
 
 </body>
 </html>
